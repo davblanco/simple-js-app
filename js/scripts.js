@@ -1,30 +1,30 @@
-let pokemonlist = [
-  {
-    name: "Bulbasaur",
-    height: ".7m",
-    type: ["grass", "poison"],
-  },
+pokemonlist = [
+  { name: "Bulbasaur", height: ".7", type: ["grass", "poison"] },
 
   {
-    name: "Carmander",
-    height: ".6m",
+    name: "Charizard",
+    height: 1.7,
     type: ["fire"],
   },
 
   {
     name: "Squirtle",
-    height: ".5m",
+    height: 0.5,
     type: ["water"],
   },
 
   {
-    name: "pidgey",
-    height: ".3m",
+    name: "Pidgey",
+    height: 0.3,
     type: ["normal , flying"],
   },
 ];
 
-for (i = 0; pokemonlist < pokemonlist.length; i++) {
+for (let i = 0; i < pokemonlist.length; i++) {
   document.write(
-    pokemonlist[i].name + " Height: " + pokemonlist[i].height + "<br>");
+    pokemonlist[i].name + ": Height: " + pokemonlist[i].height + "<br>"
+  );
+
+  if (pokemonlist[i].height > 1.0)
+    document.write("  : Wow, thats big!" + "<br>");
 }
